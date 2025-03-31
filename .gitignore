@@ -1,37 +1,78 @@
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Invisible Monks – Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff4500;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔥 The Invisible Monks – Group Application 🔥</h1>
+        <p>Welcome to the ultimate Gorilla Tag crew! Fill out this application to join.</p>
+        
+        <form action="#" method="post">
+            <label>TikTok Username:</label>
+            <input type="text" name="tiktok" placeholder="Drop your @ here" required>
+            
+            <label>Discord Username:</label>
+            <input type="text" name="discord" placeholder="Example: MonkeyKing#1234" required>
+            
+            <label>Why do you want to join The Invisible Monks?</label>
+            <textarea name="reason" placeholder="Tell us why you're built for this squad" required></textarea>
+            
+            <label>Are you willing to follow all creators, like & repost every video?</label>
+            <select name="follow_repost" required>
+                <option value="Yes">✅ Yes</option>
+                <option value="No">🚫 No</option>
+            </select>
+            
+            <label>Are you active enough to join every private code?</label>
+            <select name="active" required>
+                <option value="Always">✅ Yes, I'm always in</option>
+                <option value="Sometimes">⚠️ Sometimes</option>
+                <option value="No">🚫 No</option>
+            </select>
+            
+            <label>On a scale of 1-10, how Sigma are you?</label>
+            <input type="number" name="sigma" min="1" max="10" required>
+            
+            <label>Drop your best Gorilla Tag clip (optional):</label>
+            <input type="url" name="clip" placeholder="Paste link or describe your best moment">
+            
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
 
-# Packages #
-############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# Logs and databases #
-######################
-*.log
-*.sql
-*.sqlite
-
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
